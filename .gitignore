@@ -1,0 +1,12 @@
+#Python files
+*.pyc
+
+#QtCreator files
+*.config
+*.creator
+*.files
+*.includes
+
+#Conan files
+conaninfo.txt
+conanbuildinfo.txt
