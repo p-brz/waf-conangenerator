@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+(Unnoficial) Waf Conan Generator
+
+See README for instructions.
+
+"""
+
 from conans import ConanFile
 
 from WafGenerator import *
@@ -9,6 +16,7 @@ class WafGeneratorPackage(ConanFile):
     name = "WafGenerator"
     version = "0.0.1"
     url = "https://github.com/paulobrizolara/waf-conangenerator"
+    author = "Paulo Leonardo Souza Brizolara (souzabrizolara@gmail.com)"'
     license = "MIT"
     exports = "*.py"
 
