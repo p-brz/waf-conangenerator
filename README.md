@@ -13,7 +13,7 @@ In conanfile.txt:
 
     [requires]
     ...
-    WafGenerator/0.0.1@paulobrizolara/testing
+    WafGenerator/0.0.1@paulobrizolara/experimental
 
     [generators]
     ...
@@ -26,7 +26,7 @@ Or if you are using a conanfile.py:
 
         requires = (
             ... ,
-            "WafGenerator/0.0.1@paulobrizolara/testing"
+            "WafGenerator/0.0.1@paulobrizolara/experimental"
         )
 
         generators = "Waf"
