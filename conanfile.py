@@ -4,7 +4,7 @@
 """
 (Unnoficial) Waf Conan Generator
 
-See README for instructions.
+See README at (https://github.com/paulobrizolara/waf-conangenerator) for instructions.
 
 """
 
