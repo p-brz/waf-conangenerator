@@ -11,3 +11,6 @@
 #Conan files
 conaninfo.txt
 conanbuildinfo.txt
+
+
+.cache/
