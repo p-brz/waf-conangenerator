@@ -20,7 +20,7 @@ class FakeConanFile(object):
 def build_cpp_info(base_dir, **kw):
     cpp_info = CppInfo(base_dir)
 
-    for attr, value in kw.iteritems():
+    for attr, value in kw.items():
         setattr(cpp_info, attr, value)
 
     return cpp_info

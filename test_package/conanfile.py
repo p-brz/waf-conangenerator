@@ -5,16 +5,18 @@ from conans import ConanFile, CMake, ConfigureEnvironment
 import os
 
 name     = "WafGenerator"
-version  = "0.0.2"
+version  = "0.0.3"
 username = os.getenv("CONAN_USERNAME", "paulobrizolara")
 channel  = os.getenv("CONAN_CHANNEL", "testing")
 
-class PocoTimerConan(ConanFile):
+class ExampleConanFile(ConanFile):
+    build_policy = "missing"
     settings = "os", "compiler", "build_type", "arch"
+    
     requires = (
-        "Poco/1.7.3@lasote/stable" ,
-
         "%s/%s@%s/%s" % (name, version, username, channel),
+        
+        "Hello/0.1@memsharded/testing",
     )
 
     generators = "Waf"
@@ -28,4 +30,5 @@ class PocoTimerConan(ConanFile):
         self.run("'%s' configure build -o '%s'" % (waf, os.getcwd()), cwd=self.conanfile_directory)
 
     def test(self):
-        pass
+        self.run("pwd")
+        self.run(os.path.join(".", "example"))

@@ -12,4 +12,4 @@ def configure(conf):
     conf.load('conanbuildinfo_waf', tooldir=[".", conf.bldnode.abspath()]);
 
 def build(bld):
-    bld.program(source='timer.cpp', target='timer', use='Poco')
+    bld.program(source='example.cpp', target='example', use='Hello')
